@@ -69,3 +69,10 @@ function thc_counter_pre_text($count) {
 }
 
 add_filter('thc_display_count', 'thc_counter_pre_text');
+
+function thc_content_filter($content) {
+    $content .= apply_filters('thc_display_count', thc_get_count());
+    return $content;
+}
+
+add_filter('the_content', 'thc_content_filter');
