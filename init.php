@@ -3,7 +3,7 @@
 /*
   Plugin Name: The Hits Counter
   Plugin URI: http://blogs.gagan.pro/hits-counter/
-  Description: Checks and displays the number of hits for posts
+  Description: Checks and displays the number of hits for posts and pages
   Author: Gagan Deep Singh
   Version: 1.0
   Author URI: http://gagan.pro
