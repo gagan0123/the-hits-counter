@@ -43,7 +43,7 @@ function thc_add_counter($post_id) {
  */
 
 function thc_display_count($post_id = null) {
-    echo apply_filters('thc_display_count',thc_get_count($post_id));
+    echo apply_filters('thc_display_count', thc_get_count($post_id));
 }
 
 /*
@@ -54,16 +54,18 @@ function thc_get_count($post_id = null) {
     if ($post_id == null) {
         $post_id = get_the_ID();
     }
-    $counter = get_post_meta($post_id, 'thc_hits_counter',true);
+    $counter = get_post_meta($post_id, 'thc_hits_counter', true);
     if (empty($counter)) {
         $counter = 0;
     }
     $counter = intval($counter);
     return $counter;
 }
+
 add_shortcode('thc_hits_count', 'thc_get_count');
 
-function thc_counter_pre_text($count){
-    return '<span class="hits-counter">Hits : '.$count.'</span>';
+function thc_counter_pre_text($count) {
+    return '<span class="hits-counter">Hits : ' . $count . '</span>';
 }
-add_filter('thc_display_count','thc_counter_pre_text');
+
+add_filter('thc_display_count', 'thc_counter_pre_text');
