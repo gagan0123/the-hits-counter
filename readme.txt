@@ -22,4 +22,3 @@ Checks and displays the number of hits for posts and pages. There are a lot of o
 
 = 1.0 =
 Initial Release
-
