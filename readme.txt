@@ -14,7 +14,7 @@ Checks and displays the number of hits for posts and pages. There are a lot of o
 
 == Installation ==
 
-1. Add the plugin's directory in the WordPress' plugin directory.
+1. Add the plugin's directory in the WordPress' plugins directory.
 1. Activate the plugin.
 1. Enjoy your cup of coffee while the plugin takes care of hits on the posts and pages.
 
